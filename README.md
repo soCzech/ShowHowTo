@@ -1,8 +1,8 @@
 # ShowHowTo: Generating Scene-Conditioned Step-by-Step Visual Instructions
 
-### [[Project Website :dart:]](https://soczech.github.io/showhowto/)&nbsp;&nbsp;&nbsp;[[Paper :page_with_curl:]](#TODO)&nbsp;&nbsp;&nbsp;[Code :octocat:]
+### [[Project Website :dart:]](https://soczech.github.io/showhowto/)&nbsp;&nbsp;&nbsp;[[Paper :page_with_curl:]](https://arxiv.org/abs/2412.01987)&nbsp;&nbsp;&nbsp;[Code :octocat:]
 
-This repository contrains code for the paper [ShowHowTo: Generating Scene-Conditioned Step-by-Step Visual Instructions](#TODO).
+This repository contrains code for the paper [ShowHowTo: Generating Scene-Conditioned Step-by-Step Visual Instructions](https://arxiv.org/abs/2412.01987).
 
 
 ## Run the model on your images and prompts
