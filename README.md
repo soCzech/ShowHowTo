@@ -66,6 +66,11 @@ This repository contrains code for the paper [ShowHowTo: Generating Scene-Condit
 
 
 ## Dataset
+You can download the ShowHowTo dataset using the `download_dataset.sh` script. To also download the image sequences from our servers, you need username and password.
+You can obtain it by sending an email to *tomas.soucek at cvut dot cz* specifying your name and affiliation. Please use your institutional email (i.e., not gmail, etc.).
+
+You can also extract the dataset from the raw original videos with the following steps.
+
 1. **Download the HowTo100M videos and the ShowHowTo prompts**
    - The list of all video ids for both the train set and test set can be found [here](https://data.ciirc.cvut.cz/public/projects/2024ShowHowTo/dataset/).
    - For each video, the `keyframes.json` file contains information on which video frames are part of the dataset.
@@ -85,9 +90,6 @@ This repository contrains code for the paper [ShowHowTo: Generating Scene-Condit
      The function arguments are: `video` is the path to the video, `start_sec` and `frame_idx` are the values from the `keyframes.json` and `width` and `height` specify the output image size (we used the native video resolution here).
 3. **Prepare the image sequences**
    - Concatenate all frames from a video in the horizontal dimension and place the resulting concatenated image into `dataset_root/imgseqs/<sequenceid>.jpg`. The `<sequenceid>` is the YouTube video id.
-4. **Direct dataset download (optional)**
-   - You can also request to download the ShowHowTo dataset image sequences from our servers.
-     Send an email to *tomas.soucek at cvut dot cz* specifying your name and affiliation. Please use your institutional email (i.e., not gmail, etc.).
 
 
 
