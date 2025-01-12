@@ -85,5 +85,5 @@ def sequence_collate(batch):
     if isinstance(prompt[0], list):
         prompt = []
         for i in range(len(batch)):
-            prompt.extend(batch[i][2])
+            prompt.extend(batch[i][1])
     return video_frames, prompt

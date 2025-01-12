@@ -84,6 +84,7 @@ def main_worker(local_rank, cluster_args, args):
     config = OmegaConf.load("./configs/inference_256_v1.1.yaml")["model"]
     model = instantiate_from_config(config)
     model = load_model_checkpoint(model, args.ckpt_path)
+    model.image_proj_model.requires_grad_(False)  # torch sometimes thinks there are missing gradients w.r.t Resampler
 
     torch.cuda.set_device(local_rank)
     model.cuda(local_rank)
