@@ -2,7 +2,7 @@
 
 ### [[Project Website :dart:]](https://soczech.github.io/showhowto/)&nbsp;&nbsp;&nbsp;[[Paper :page_with_curl:]](https://arxiv.org/abs/2412.01987)&nbsp;&nbsp;&nbsp;[Code :octocat:]
 
-This repository contrains code for the paper [ShowHowTo: Generating Scene-Conditioned Step-by-Step Visual Instructions](https://arxiv.org/abs/2412.01987).
+This repository contains code for the CVPR'25 paper [ShowHowTo: Generating Scene-Conditioned Step-by-Step Visual Instructions](https://arxiv.org/abs/2412.01987).
 
 
 ## Run the model on your images and prompts
@@ -96,10 +96,16 @@ You can also extract the dataset from the raw original videos with the following
 
 ## Citation
 ```bibtex
-@article{soucek2024showhowto,
+@article{soucek2025showhowto,
     title={ShowHowTo: Generating Scene-Conditioned Step-by-Step Visual Instructions},
     author={Sou\v{c}ek, Tom\'{a}\v{s} and Gatti, Prajwal and Wray, Michael and Laptev, Ivan and Damen, Dima and Sivic, Josef},
-    month = {December},
-    year = {2024}
+    booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month = {June},
+    year = {2025}
 }
 ```
+
+## Acknowledgements
+
+The code has been adapted from the ECCV 2024 paper [DynamiCrafter: Animating Open-domain Images with Video Diffusion Priors](https://arxiv.org/abs/2310.12190) available on [GitHub](https://github.com/Doubiiu/DynamiCrafter). Please refer to its license before use.
+
